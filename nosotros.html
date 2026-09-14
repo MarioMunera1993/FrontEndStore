@@ -1,65 +1,100 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FrontEnd Store</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/nosotros.css">
-</head>
+  <body>
+    <!-- CABECERA -->
+    <header class="header">
+      <a href="index.html">
+        <img class="header__logo" src="img/logo.png" alt="logo tipo" />
+      </a>
+    </header>
 
-<body>
-  <!-- CABECERA -->
-  <header class="header">
-    <a href="index.html">
-      <img class="header__logo" src="img/logo.png" alt="logo tipo" />
-    </a>
-  </header>
+    <!-- NAVEGACION -->
+    <nav class="navegacion">
+      <a class="navegacion__enlace" href="index.html">Tienda</a>
+      <a
+        class="navegacion__enlace navegacion__enlace--activo"
+        href="nosotros.html"
+        >Nosotros</a
+      >
+    </nav>
 
-  <!-- NAVEGACION -->
-  <nav class="navegacion">
-    <a class="navegacion__enlace" href="index.html">Tienda</a>
-    <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
-  </nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+      <h1>Sobre Nosotros</h1>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="contenedor">
-    <h1>Sobre Nosotros</h1>
-
-    <div class="grid-nosotros">
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, neque unde eaque repudiandae totam debitis
-          consectetur expedita. Vitae sunt corrupti voluptate facere. Iure quaerat, cum eveniet dolores nostrum quasi
-          ipsum!
-          Deserunt aspernatur dolor animi non nam expedita, saepe recusandae quisquam totam perspiciatis, odit ipsa
-          veritatis ipsam autem? Accusantium ratione animi delectus quo minus voluptatum non corporis, deleniti nam
-          explicabo suscipit?</p>
+      <div class="grid-nosotros">
+        <div class="nosotros__contenido">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            neque unde eaque repudiandae totam debitis consectetur expedita.
+            Vitae sunt corrupti voluptate facere. Iure quaerat, cum eveniet
+            dolores nostrum quasi ipsum! Deserunt aspernatur dolor animi non nam
+            expedita, saepe recusandae quisquam totam perspiciatis, odit ipsa
+            veritatis ipsam autem? Accusantium ratione animi delectus quo minus
+            voluptatum non corporis, deleniti nam explicabo suscipit?
+          </p>
+        </div>
+        <img class="nosotros__imagen" src="img/nosotros.jpg" alt="" />
       </div>
-      <div>
-        <img src="img/nosotros.jpg" alt="">
-      </div>
-      <div class="grid__opciones">
-        <h2 class="sub-titulo">Por que comprar con nostros</h2>
-      </div>
-      <div class="grid__iconos">
-        <img src="img/icono_1.png" alt="dinero">
-        <img src="img/icono_2.png" alt="html">
-        <img src="img/icono_3.png" alt="Entrega">
-        <img src="img/icono_4.png" alt="escudo">
-      </div>
+    </main>
 
-    </div>
-  </main>
+    <section class="contenedor comprar">
+      <h2 class="comprar__titulo">Por que comprar con nostros</h2>
 
-  <!--Pie de pagina-->
-  <footer class="footer">
-    <p class="footer__texto">
-      Front End Store - Todos los derechos Reservados 2026.
-    </p>
-  </footer>
-</body>
+      <div class="bloques">
+        <div class="bloque">
+          <img src="img/icono_1.png" alt="dinero" />
+          <h3 class="bloque__titulo">El Mejor Precio</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            neque unde eaque repudiandae totam debitis consectetur expedita.
+          </p>
+        </div>
+        <div class="bloque">
+          <img src="img/icono_2.png" alt="dinero" />
+          <h3 class="bloque__titulo">Para Devs</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            neque unde eaque repudiandae totam debitis consectetur expedita.
+          </p>
+        </div>
+        <div class="bloque">
+          <img src="img/icono_3.png" alt="dinero" />
+          <h3 class="bloque__titulo">Envio Gratis</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            neque unde eaque repudiandae totam debitis consectetur expedita.
+          </p>
+        </div>
+        <div class="bloque">
+          <img src="img/icono_4.png" alt="dinero" />
+          <h3 class="bloque__titulo">La mejor calidad</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            neque unde eaque repudiandae totam debitis consectetur expedita.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!--Pie de pagina-->
+    <footer class="footer">
+      <p class="footer__texto">
+        Front End Store - Todos los derechos Reservados 2026.
+      </p>
+    </footer>
+  </body>
 </html>
